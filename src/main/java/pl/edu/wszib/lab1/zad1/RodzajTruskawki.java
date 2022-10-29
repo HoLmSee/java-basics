@@ -1,13 +1,5 @@
 package pl.edu.wszib.lab1.zad1;
 
-/**
- * Rodzaje truskawek:
- * Ananasowa
- * Honeoye
- * Polka
- * Kent
- * Christine
- */
 public enum RodzajTruskawki {
     ANANASOWA("Ananasowa", "Białe owoce"),
     HONEOYE("Honeoye", "Wyrazista"),
@@ -39,7 +31,7 @@ public enum RodzajTruskawki {
     public String toString() {
         return "RodzajTruskawki[" + name() + "]{" +
                 "nazwa='" + nazwa + '\'' +
-                ", cecha='" + cecha + '\'' +
+                ", cecha='" + cecha + '\'' +  '\'' +
                 '}';
     }
 }

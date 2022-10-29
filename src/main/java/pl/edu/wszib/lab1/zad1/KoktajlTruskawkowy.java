@@ -22,10 +22,13 @@ public class KoktajlTruskawkowy extends KoktajSmakowy {
                 smak() + ", która cechuje się " + rodzajTruskawki.cecha()
         );
         String message = String.format(
-                "Pije koktajl %s, %s",
+                "Pije koktajl %s, %s, %s",
                 rodzajSmaku,
-                rodzajTruskawki
+                rodzajTruskawki,
+                zrodloSmaku()
         );
         System.out.println(message);
     }
+
+
 }
