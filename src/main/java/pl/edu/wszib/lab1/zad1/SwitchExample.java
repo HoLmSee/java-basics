@@ -5,7 +5,7 @@ import java.util.Random;
 public class SwitchExample {
     public static void main(String[] args) {
         int index = new Random().nextInt(0, RodzajTruskawki.values().length);
-        RodzajTruskawki rodzajTruskawki = RodzajTruskawki.SUPER_NEW; // RodzajTruskawki.values()[index];
+        RodzajTruskawki rodzajTruskawki = RodzajTruskawki.values()[index];
         System.out.println("Wylosowano " + rodzajTruskawki);
         int sizeFromStatement = switchStatement(rodzajTruskawki);
         // switch expressions are recommended!!!
@@ -39,6 +39,10 @@ public class SwitchExample {
             case BRAND_NEW:
                 System.out.println(rodzajTruskawki);
                 size = 6;
+                break;
+            case SUPER_NEW:
+                System.out.println(rodzajTruskawki);
+                size = 7;
                 break;
             default:
                 throw new IllegalStateException("Unexpected value: " + rodzajTruskawki);

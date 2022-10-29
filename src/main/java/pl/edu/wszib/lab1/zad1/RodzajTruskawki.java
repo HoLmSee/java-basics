@@ -37,7 +37,7 @@ public enum RodzajTruskawki {
 
     @Override
     public String toString() {
-        return "RodzajTruskawki{" +
+        return "RodzajTruskawki[" + name() + "]{" +
                 "nazwa='" + nazwa + '\'' +
                 ", cecha='" + cecha + '\'' +
                 '}';
